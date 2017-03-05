@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet author="alex" id="kitTrigger" dbms="postgresql">
+        <sql>
+            DROP TRIGGER IF EXISTS kit_option_items_lastmodified ON kit.kit;
+            CREATE TRIGGER kit_option_items_lastmodified BEFORE UPDATE ON kit.kit_option_items FOR EACH ROW EXECUTE PROCEDURE kit.lastmodtime();
+        </sql>
+        <rollback>
+            DROP TRIGGER IF EXISTS kit_option_items_lastmodified ON kit.kit_option_items;
+        </rollback>
+    </changeSet>
+</databaseChangeLog>
