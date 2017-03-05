@@ -1,6 +1,16 @@
 # kit-service-api
 [B]lck.ly's kits
 
+#Setup
+To setup, you will need to install a postgres instance with a new schema called "Kit" with owner to a user brickly.  By default (in application.properties) a connection will be made to:
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/brickly
+
+spring.datasource.username=brickly
+
+spring.datasource.password=bricklypw
+
+
 #Usages
 [B]lck.ly provides 4 endpoints for kit management.
 
