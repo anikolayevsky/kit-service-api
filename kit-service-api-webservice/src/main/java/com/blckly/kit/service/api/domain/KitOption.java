@@ -1,6 +1,6 @@
-package com.brickly.kit.service.api.domain;
+package com.blckly.kit.service.api.domain;
 
-import com.brickly.kit.service.api.type.KitOptionCategory;
+import com.blckly.kit.service.api.type.KitOptionCategory;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.CascadeType;

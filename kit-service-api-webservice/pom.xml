@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.brickly</groupId>
+        <groupId>com.blckly</groupId>
         <artifactId>kit-service-api</artifactId>
         <version>1.0</version>
     </parent>
@@ -37,7 +37,7 @@
             <artifactId>postgresql</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.brickly</groupId>
+            <groupId>com.blckly</groupId>
             <artifactId>kit-service-api-liquibase</artifactId>
         </dependency>
         <dependency>  <!-- used by unit test only -->

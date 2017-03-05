@@ -1,4 +1,4 @@
-package com.brickly.kit.service.api.config;
+package com.blckly.kit.service.api.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -42,8 +42,8 @@ public class CoreConfig extends WebMvcConfigurerAdapter{
 //
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Brickly Kit Service API")
-                .description("Brickly KitServiceApi")
+                .title("blckly Kit Service API")
+                .description("blckly KitServiceApi")
                 .termsOfServiceUrl("")
                 .contact("Alex Nikolayevsky")
                 .license("Apache License Version 2.0")

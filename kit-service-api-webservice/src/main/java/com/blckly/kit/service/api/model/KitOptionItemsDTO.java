@@ -1,55 +1,20 @@
-package com.brickly.kit.service.api.domain;
+package com.blckly.kit.service.api.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.brickly.kit.service.api.type.KitOptionCategory;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 import java.util.Date;
 
 /**
  * Created by alexnikolayevsky on 9/1/16.
  */
-@Entity
-@Table(name = "kit_option_items")
-public class KitOptionItems {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class KitOptionItemsDTO {
     private Integer id;
-
-    @JsonIgnore
-    @ManyToOne
-    @JoinColumn(name="kit_option_id")
-    private KitOption kitOption;
-
-    @Column(name="name")
     private String name;
-
-    @Column(name="description")
     private String description;
-
-    @Column(name="base_fee")
     private Double baseFee;
-
-    @Column(name="stock")
     private Integer stock;
-
-    @Column(name = "created", insertable = false, updatable = false)
-    @Temporal(TemporalType.TIMESTAMP)
     private Date created;
-
-    @Column(name = "lastmodified")
-    @Temporal(TemporalType.TIMESTAMP)
     private Date lastModified;
 
     public Integer getId() {
@@ -58,14 +23,6 @@ public class KitOptionItems {
 
     public void setId(Integer id) {
         this.id = id;
-    }
-
-    public KitOption getKitOption() {
-        return kitOption;
-    }
-
-    public void setKitOption(KitOption kitOption) {
-        this.kitOption = kitOption;
     }
 
     public String getName() {

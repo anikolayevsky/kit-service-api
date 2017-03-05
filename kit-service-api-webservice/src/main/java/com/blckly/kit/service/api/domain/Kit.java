@@ -1,4 +1,4 @@
-package com.brickly.kit.service.api.domain;
+package com.blckly.kit.service.api.domain;
 
 import javax.persistence.*;
 import java.util.Date;

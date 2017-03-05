@@ -1,4 +1,4 @@
-package com.brickly.kit.service.api.model;
+package com.blckly.kit.service.api.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

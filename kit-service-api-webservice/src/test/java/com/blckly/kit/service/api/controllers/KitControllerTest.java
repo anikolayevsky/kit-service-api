@@ -1,11 +1,11 @@
-package com.brickly.kit.service.api.controllers;
+package com.blckly.kit.service.api.controllers;
 
-import com.brickly.kit.service.api.KitServiceApiApplication;
-import com.brickly.kit.service.api.model.KitDTO;
-import com.brickly.kit.service.api.model.KitOptionDTO;
-import com.brickly.kit.service.api.model.KitOptionItemsDTO;
-import com.brickly.kit.service.api.respositories.KitRepository;
-import com.brickly.kit.service.api.type.KitOptionCategory;
+import com.blckly.kit.service.api.KitServiceApiApplication;
+import com.blckly.kit.service.api.model.KitDTO;
+import com.blckly.kit.service.api.model.KitOptionDTO;
+import com.blckly.kit.service.api.model.KitOptionItemsDTO;
+import com.blckly.kit.service.api.respositories.KitRepository;
+import com.blckly.kit.service.api.type.KitOptionCategory;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;

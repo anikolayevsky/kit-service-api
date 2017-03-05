@@ -1,11 +1,11 @@
-package com.brickly.kit.service.api.controllers;
+package com.blckly.kit.service.api.controllers;
 
-import com.brickly.kit.service.api.domain.Kit;
-import com.brickly.kit.service.api.domain.KitOption;
-import com.brickly.kit.service.api.domain.KitOptionItems;
-import com.brickly.kit.service.api.model.KitDTO;
+import com.blckly.kit.service.api.domain.Kit;
+import com.blckly.kit.service.api.domain.KitOption;
+import com.blckly.kit.service.api.domain.KitOptionItems;
+import com.blckly.kit.service.api.model.KitDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.brickly.kit.service.api.services.KitService;
+import com.blckly.kit.service.api.services.KitService;
 import io.swagger.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

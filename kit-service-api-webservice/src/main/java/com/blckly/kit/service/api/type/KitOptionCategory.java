@@ -1,4 +1,4 @@
-package com.brickly.kit.service.api.type;
+package com.blckly.kit.service.api.type;
 
 /**
  * Created by alexnikolayevsky on 3/4/17.

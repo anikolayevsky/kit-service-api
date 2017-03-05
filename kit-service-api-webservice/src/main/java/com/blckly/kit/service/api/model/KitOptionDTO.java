@@ -1,6 +1,6 @@
-package com.brickly.kit.service.api.model;
+package com.blckly.kit.service.api.model;
 
-import com.brickly.kit.service.api.type.KitOptionCategory;
+import com.blckly.kit.service.api.type.KitOptionCategory;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.Date;

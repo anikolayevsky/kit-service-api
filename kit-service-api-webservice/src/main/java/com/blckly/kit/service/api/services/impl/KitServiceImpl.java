@@ -1,8 +1,8 @@
-package com.brickly.kit.service.api.services.impl;
+package com.blckly.kit.service.api.services.impl;
 
 import com.google.common.collect.Iterables;
-import com.brickly.kit.service.api.respositories.KitRepository;
-import com.brickly.kit.service.api.services.KitService;
+import com.blckly.kit.service.api.respositories.KitRepository;
+import com.blckly.kit.service.api.services.KitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,19 +17,19 @@ public class KitServiceImpl implements KitService {
     @Autowired
     protected KitRepository repository;
 
-    public com.brickly.kit.service.api.domain.Kit[] findAll() {
-        return Iterables.toArray(repository.findAll(), com.brickly.kit.service.api.domain.Kit.class);
+    public com.blckly.kit.service.api.domain.Kit[] findAll() {
+        return Iterables.toArray(repository.findAll(), com.blckly.kit.service.api.domain.Kit.class);
     }
 
-    public com.brickly.kit.service.api.domain.Kit[] findBySku(String sku) {
+    public com.blckly.kit.service.api.domain.Kit[] findBySku(String sku) {
         return repository.findBySku(sku);
     }
 
-    public com.brickly.kit.service.api.domain.Kit findOne(Integer id) {
+    public com.blckly.kit.service.api.domain.Kit findOne(Integer id) {
         return repository.findOne(id);
     }
 
-    public com.brickly.kit.service.api.domain.Kit save(com.brickly.kit.service.api.domain.Kit kit) {
+    public com.blckly.kit.service.api.domain.Kit save(com.blckly.kit.service.api.domain.Kit kit) {
         return repository.save(kit);
     }
 

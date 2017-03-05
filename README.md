@@ -2,13 +2,13 @@
 [B]lck.ly's kits
 
 #Setup
-To setup, you will need to install a postgres instance with a new schema called "Kit" with owner to a user brickly.  By default (in application.properties) a connection will be made to:
+To setup, you will need to install a postgres instance with a new schema called "Kit" with owner to a user blckly.  By default (in application.properties) a connection will be made to:
 
-spring.datasource.url=jdbc:postgresql://localhost:5432/brickly
+spring.datasource.url=jdbc:postgresql://localhost:5432/blckly
 
-spring.datasource.username=brickly
+spring.datasource.username=blckly
 
-spring.datasource.password=bricklypw
+spring.datasource.password=blcklypw
 
 
 #Usages
